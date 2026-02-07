@@ -1,0 +1,148 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* ---------- LOGOS ---------- */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* ---------- CARD ---------- */
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* ---------- APP ---------- */
+.App {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid #4e1414;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  width: 30rem;
+  max-width: 80%;
+  color: #000;
+
+  background-color: rgb(22, 106, 148);
+}
+
+
+.App h2,
+.App h3 {
+  color: #333;
+  text-align: center;
+}
+
+/* ---------- INPUT ---------- */
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #edeefe;
+  border-radius: 30px;
+  padding: 5px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 16px;
+  padding: 10px;
+  flex: 1;
+  border-radius: 30px;
+  color: #000;
+}
+
+/* ---------- BUTTONS ---------- */
+.input-container button {
+  cursor: pointer;
+  border: none;
+  color: white;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button.agregar {
+  background-color: #28a745;
+}
+
+button.agregar:hover {
+  background-color: #218838;
+  transform: scale(1.1);
+}
+
+button.eliminar {
+  background-color: #dc3545;
+}
+
+button.eliminar:hover {
+  background-color: #c82333;
+  transform: scale(1.1);
+}
+
+/* ---------- TODO ITEM ---------- */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #edeefe;
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.25s ease;
+}
+
+.todo-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.todo-text {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  overflow-wrap: break-word;
+  flex-grow: 1;
+}
